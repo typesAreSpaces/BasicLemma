@@ -22,7 +22,7 @@ The command `lift` has the following inputs:
 - `x`: Denotes the free variable of the ring of univariate polynomial
 
 The output of `lift` is a pair of polynomials `sigma`, `tau` such that
-$$sigma f + tau g = 1$$ and both `sigma`, `tau` are non-negative over
+$$sigma * f + tau * g = 1$$ and both `sigma`, `tau` are non-negative over
 the semialgebraic set associated to `basis`. For examples, check the
 directory `tests`.
 
