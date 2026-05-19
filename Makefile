@@ -1,26 +1,11 @@
 PROJECT_NAME=BasicLemma
-TEST_FILE=test.mpl
-SUFFIX=
-LOG_FILE=log_time${SUFFIX}.txt
-OUTPUT=output${SUFFIX}.txt
 
-QUIET_MODE=
-QUIET_MODE=-q
+.PHONY: clean
 
-QUIET_MODE=
+all: ${PROJECT_NAME}.mla
 
-.PHONY: clean all
-
-all:
-	@make ${OUTPUT}
-
-${OUTPUT}: ${PROJECT_NAME}.mla ${TEST_FILE}
-	if [ -f ${LOG_FILE} ]; then rm ${LOG_FILE}; fi;
-	maple ${TEST_FILE} ${QUIET_MODE} > ${OUTPUT}
-
-${PROJECT_NAME}.mla: ${PROJECT_NAME}.mpl
-	archive_maple_project.py ${PROJECT_NAME} ${PROJECT_NAME} ${PROJECT_NAME}
+${PROJECT_NAME}.mla: src/${PROJECT_NAME}.mpl
+	maple ./scripts/installation_script.mpl
 
 clean:
-	rm -rf in.dat out.out
 	rm -rf ${PROJECT_NAME}.mla

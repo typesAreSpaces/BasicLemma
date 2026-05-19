@@ -1,0 +1,4 @@
+libname := libname, "../BasicLemma.mla":
+with(BasicLemma);
+
+sigma, tau := lift((x+1)^3, -(x-1)^3, [-(x+1)*(x-1)], x);
