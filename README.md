@@ -48,7 +48,7 @@ The output is
 
 We can verify that
 $$(\frac{3}{16}x^2 - \frac{9}{16}x + \frac{1}{2}) \dot (x + 1)^3 + (\frac{3}{16}x^2 + \frac{9}{16}x + \frac{1}{2}) \dot (-(x - 1)^3) = 1 $$
-and both $$sigma$$ and $$tau$$ are non-negative over the interval
+and both $$\frac{3}{16}x^2 - \frac{9}{16}x + \frac{1}{2}$$ and $$\frac{3}{16}x^2 + \frac{9}{16}x + \frac{1}{2}$$ are non-negative over the interval
 $$[-1, 1]$$ as these polynomials are non-negative over $$\mathbb{R}$$.
 
 ## References
